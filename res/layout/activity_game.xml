@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@drawable/backimage"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:padding="10dp"
+    tools:context="com.example.tom.guessthenumber.GameActivity">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="+"
+        android:id="@+id/b_plus"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/tv_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:background="#B4CCEE"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="32dp"
+        android:gravity="center"
+        android:id="@+id/tv_number"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:background="#B4CCEE"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="-"
+        android:id="@+id/b_minus"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/tv_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="#B4CCEE"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_guess"
+        android:id="@+id/tv_title"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:background="#B4CCEE"
+
+         />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_check"
+        android:id="@+id/b_check"
+        android:layout_above="@+id/b_reset"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/b_reset"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/b_minus"
+        android:layout_toStartOf="@+id/b_minus" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More"
+        android:id="@+id/b_more"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/tv_title"
+        android:layout_alignEnd="@+id/tv_title"
+        android:layout_toRightOf="@+id/b_minus"
+        android:layout_toEndOf="@+id/b_minus"
+        android:onClick="onClick"/>
+</RelativeLayout>
